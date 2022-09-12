@@ -1,5 +1,7 @@
 :root {
     --ff-main: 'Lato', sans-serif;
+    --ff-handwritten: 'Pacifico', cursive;
+    --ff-bold: 'Bebas Neue', cursive;
 }
 
 body {
@@ -21,6 +23,14 @@ header nav {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+}
+
+.nav-left h2 {
+    font-family: var(--ff-handwritten);
+}
+
+.nav-left span {
+    font-family: var(--ff-bold);
 }
 
 .nav-right {
