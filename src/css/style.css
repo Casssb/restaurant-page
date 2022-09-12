@@ -1,0 +1,41 @@
+:root {
+    --ff-main: 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--ff-main);
+}
+
+header {
+    background-color: rgb(62, 78, 78);
+    height: min-content;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
