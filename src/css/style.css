@@ -8,6 +8,10 @@ body {
     font-family: var(--ff-main);
 }
 
+#content {
+    background-image: url('../img/restaurant.jpg');
+}
+
 header {
     background-color: rgb(62, 78, 78);
     height: min-content;
