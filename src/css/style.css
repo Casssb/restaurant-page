@@ -40,13 +40,19 @@ body {
 header nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-left {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
+}
+
+.nav-left img {
+    filter: invert();
+    height: 3rem;
 }
 
 .nav-left h2 {
@@ -57,6 +63,8 @@ header nav {
 .nav-left span {
     font-family: var(--ff-bold);
     color: var(--color-red);
+    font-size: 2rem;
+    margin: 0.5rem;
 }
 
 .nav-right {
@@ -70,10 +78,19 @@ header nav {
     gap: 2rem;
     align-items: center;
     justify-content: center;
+    font-family: var(--ff-bold);
+    font-size: 1.5rem;
 }
 
 .nav-links a {
     text-decoration: none;
+    color: var(--color-white);
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--color-white);
 }
 
 main  {

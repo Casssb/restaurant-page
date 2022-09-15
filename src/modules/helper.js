@@ -9,10 +9,10 @@ const createHtmlElement = (type, id, Classes, content) => {
 
 const createFormInput = (type, id, name, placeholder, required) => {
   const input = document.createElement('input');
-  input.setAttribute('type', type);
-  input.setAttribute('id', id);
-  input.setAttribute('name', name);
-  input.setAttribute('placeholder', placeholder);
+  if (type) input.setAttribute('type', type);
+  if( id) input.setAttribute('id', id);
+  if (name) input.setAttribute('name', name);
+  if (placeholder) input.setAttribute('placeholder', placeholder);
   if (required) input.setAttribute('required', '');
 
   return input;

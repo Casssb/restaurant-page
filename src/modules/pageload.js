@@ -1,4 +1,5 @@
 import cow from '../img/cow-svg.svg'
+import { createHtmlElement } from './helper';
 
 const pageLoad = () => {
   const container = document.querySelector('#content');
@@ -8,8 +9,8 @@ const pageLoad = () => {
     header.classList.add('header');
     header.innerHTML = `<nav>
         <div class="nav-left">
-          <img src="`${cow}`" alt="cow icon" />
-          <h2><span>Angry Cow</span> Steak House</h2>
+          <img src="./b9cd1f60bfe9ed15fb8a.svg" alt="cow icon" />
+          <h2><span>Mad Cow</span> Steak House</h2>
         </div>
         <div class="nav-right">
           <ul class="nav-links">
@@ -25,8 +26,7 @@ const pageLoad = () => {
 
   renderHeader();
 
-  const main = document.createElement('main');
-  main.setAttribute('id', 'page');
+  const main = createHtmlElement('main', 'page', null, null)
   container.appendChild(main);
 };
 
