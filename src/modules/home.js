@@ -1,4 +1,5 @@
-import { createHtmlElement } from './helper';
+import { createHtmlElement, clearElement } from './helper';
+import { renderMenu } from './menu';
 
 const renderHome = () => {
   const main = document.querySelector('#page');
@@ -12,6 +13,12 @@ const renderHome = () => {
     <button class="home-button-menu" id="menu-button">Menu</button>`;
 
   main.appendChild(home);
+
+  const menuButton = document.querySelector('#menu-button');
+  menuButton.addEventListener('click', () => {
+    clearElement(main);
+    renderMenu();
+  }) 
 };
 
 export { renderHome };

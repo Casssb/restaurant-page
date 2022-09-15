@@ -18,4 +18,9 @@ const createFormInput = (type, id, name, placeholder, required) => {
   return input;
 };
 
-export { createHtmlElement, createFormInput };
+const clearElement = (elem) => {
+  elem.innerHTML = '';
+  return elem;
+}
+
+export { createHtmlElement, createFormInput, clearElement };
