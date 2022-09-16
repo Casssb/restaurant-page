@@ -3,7 +3,7 @@ import { createHtmlElement } from './helper';
 const renderAbout = () => {
   const main = document.querySelector('#page');
   const about = createHtmlElement('section', 'about', ['about'], null);
-  about.innerHTML = `<h2 class="about-title">Steaks is high (higher than high)</h2>
+  about.innerHTML = `<h2 class="about-title">Steaks is high (<span class="about-title-span">higher than high</span>)</h2>
     <p class="about-description">The Instamatic focal point bringin' damage to your farm<br>
       Be some bulls from the east with some steaks that be warm <br>
       Got the solar gravitation so I'm bound to pull it <br>

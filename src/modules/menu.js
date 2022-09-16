@@ -4,21 +4,21 @@ const renderMenu = () => {
   const main = document.querySelector('#page');
   const menu = createHtmlElement('section', 'menu', ['menu'], null);
 
-  const foodMenuCatagory = createHtmlElement(
+  const foodMenuCategory = createHtmlElement(
     'div',
     'food',
-    ['menu-catagory'],
+    ['menu-category'],
     null
   );
-  menu.appendChild(foodMenuCatagory);
+  menu.appendChild(foodMenuCategory);
 
   const foodMenuTitle = createHtmlElement(
     'h2',
     null,
-    ['menu-catagory-title'],
+    ['menu-category-title'],
     'Steaks'
   );
-  foodMenuCatagory.appendChild(foodMenuTitle);
+  foodMenuCategory.appendChild(foodMenuTitle);
 
   const foods = [
     { name: 'Fillet', size: '350g', cost: '37.95' },
@@ -51,24 +51,24 @@ const renderMenu = () => {
     );
     foodItem.appendChild(foodCost);
 
-    foodMenuCatagory.appendChild(foodItem);
+    foodMenuCategory.appendChild(foodItem);
   });
 
-  const drinkMenuCatagory = createHtmlElement(
+  const drinkMenuCategory = createHtmlElement(
     'div',
     'drink',
-    ['menu-catagory'],
+    ['menu-category'],
     null
   );
-  menu.appendChild(drinkMenuCatagory);
+  menu.appendChild(drinkMenuCategory);
 
   const drinkMenuTitle = createHtmlElement(
     'h2',
     null,
-    ['menu-catagory-title'],
+    ['menu-category-title'],
     'Drinks'
   );
-  drinkMenuCatagory.appendChild(drinkMenuTitle);
+  drinkMenuCategory.appendChild(drinkMenuTitle);
 
   const drinks = [
     { name: 'Irn-Bru', size: '330ml', cost: '2.50' },
@@ -101,7 +101,7 @@ const renderMenu = () => {
     );
     drinkItem.appendChild(drinkCost);
 
-    drinkMenuCatagory.appendChild(drinkItem);
+    drinkMenuCategory.appendChild(drinkItem);
   });
 
   main.appendChild(menu);

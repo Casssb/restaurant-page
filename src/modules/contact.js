@@ -42,10 +42,10 @@ const renderContact = () => {
     Bristol <br>
     BS1 6WE <br>
     0808 134 5800 <br>
-    ifyoureinbristol@grabasqueezedtheyrelush.com</p>
+    ifyoureinbristol@<br>grabasqueezedtheyrelush.com</p>
   <h3 class="address-title">Hours</h3>
   <p class="address-description">Tues-Sat: 12pm-3pm/5pm-9pm <br>
-  Sund & Mon: Closed</p>`
+  Sun & Mon: Closed</p>`
 
   const googleMap = createHtmlElement('div', null, ['address-map'], null);
   addressContainer.append(googleMap);
