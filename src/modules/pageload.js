@@ -5,7 +5,7 @@ const pageLoad = () => {
   const container = document.querySelector('#content');
 
   const renderHeader = () => {
-    const header = createHtmlElement('header', null, ['header'], null)
+    const header = createHtmlElement('header', null, ['header'], null);
     header.innerHTML = `<nav>
         <div class="nav-left">
           <img src="./b9cd1f60bfe9ed15fb8a.svg" alt="cow icon" />

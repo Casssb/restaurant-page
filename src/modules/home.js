@@ -18,7 +18,7 @@ const renderHome = () => {
   menuButton.addEventListener('click', () => {
     clearElement(main);
     renderMenu();
-  }) 
+  });
 };
 
 export { renderHome };

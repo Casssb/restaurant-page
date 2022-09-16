@@ -2,14 +2,13 @@ import 'sanitize.css';
 import './css/style.css';
 import { clearElement } from './modules/helper';
 import { pageLoad } from './modules/pageload';
-import { renderHome} from './modules/home';
-import { renderMenu} from './modules/menu';
-import { renderAbout} from './modules/about';
-import { renderContact} from './modules/contact';
+import { renderHome } from './modules/home';
+import { renderMenu } from './modules/menu';
+import { renderAbout } from './modules/about';
+import { renderContact } from './modules/contact';
 
 pageLoad();
 renderHome();
-
 
 const home = document.querySelector('#home');
 const menu = document.querySelector('#menu');
@@ -18,27 +17,21 @@ const contact = document.querySelector('#contact');
 const main = document.querySelector('#page');
 
 home.addEventListener('click', (e) => {
-    clearElement(main);
-    renderHome();
-    console.log(e.target)
+  clearElement(main);
+  renderHome();
 });
 
 menu.addEventListener('click', (e) => {
-    clearElement(main);
-    renderMenu();
-    console.log(e.target)
+  clearElement(main);
+  renderMenu();
 });
 
 about.addEventListener('click', (e) => {
-    clearElement(main);
-    renderAbout();
-    e.preventDefault();
-    console.log(e.target)
+  clearElement(main);
+  renderAbout();
 });
 
 contact.addEventListener('click', (e) => {
-    clearElement(main);
-    renderContact();
-    e.preventDefault();
-    console.log(e.target)
+  clearElement(main);
+  renderContact();
 });
