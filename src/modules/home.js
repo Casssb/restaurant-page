@@ -15,9 +15,13 @@ const renderHome = () => {
   main.appendChild(home);
 
   const menuButton = document.querySelector('#menu-button');
+  const homeNav = document.querySelector('#home');
+  const menuNav = document.querySelector('#menu');
   menuButton.addEventListener('click', () => {
     clearElement(main);
     renderMenu();
+    homeNav.classList.remove('nav-link-active');
+    menuNav.classList.add('nav-link-active');
   });
 };
 

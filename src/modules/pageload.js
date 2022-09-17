@@ -39,8 +39,7 @@ const pageLoad = () => {
   });
   /* Logic to add bottom border and move menu item slightly upwards to indicate it's selected */
   navLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      console.log(e.target);
+    link.addEventListener('click', () => {
       navRight.classList.toggle('active');
       navLinks.forEach((el) => el.classList.remove('nav-link-active'));
       link.classList.add('nav-link-active');
