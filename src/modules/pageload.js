@@ -29,7 +29,7 @@ const pageLoad = () => {
   };
 
   renderHeader();
-
+  /* Logic to toggle rightside menu when hamburger is clicked */
   const hamburger = document.querySelector('#hamburger');
   const navRight = document.querySelector('.nav-right');
   const navLinks = document.querySelectorAll('.nav-links li');
@@ -37,12 +37,15 @@ const pageLoad = () => {
     e.preventDefault();
     navRight.classList.toggle('active');
   });
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
+  /* Logic to add bottom border and move menu item slightly upwards to indicate it's selected */
+  navLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      console.log(e.target);
       navRight.classList.toggle('active');
-    })
-  })
+      navLinks.forEach((el) => el.classList.remove('nav-link-active'));
+      link.classList.add('nav-link-active');
+    });
+  });
 
   const main = createHtmlElement('main', 'page', null, null);
   container.appendChild(main);

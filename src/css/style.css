@@ -102,8 +102,12 @@ nav {
   color: var(--color-white);
 }
 
-.nav-links a:hover {
+.nav-links li:hover {
   cursor: pointer;
+  border-bottom: 1px solid var(--color-white);
+}
+
+.nav-link-active {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--color-white);
 }
