@@ -7,6 +7,11 @@ const pageLoad = () => {
   const renderHeader = () => {
     const header = createHtmlElement('header', null, ['header'], null);
     header.innerHTML = `<nav>
+        <div class="nav-hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+       </div>
         <div class="nav-left">
           <img src="./b9cd1f60bfe9ed15fb8a.svg" alt="cow icon" />
           <h2><span>Mad Cow</span> Steak House</h2>
@@ -24,6 +29,20 @@ const pageLoad = () => {
   };
 
   renderHeader();
+
+  const hamburger = document.querySelector('#hamburger');
+  const navRight = document.querySelector('.nav-right');
+  const navLinks = document.querySelectorAll('.nav-links li');
+  hamburger.addEventListener('click', (e) => {
+    e.preventDefault();
+    navRight.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navRight.classList.toggle('active');
+    })
+  })
 
   const main = createHtmlElement('main', 'page', null, null);
   container.appendChild(main);
